@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Pembayaran THR</title>
+</head>
+<body>
+    <h2>Pembayaran THR</h2>
+
+    <form id="gajiForm">
+        <label for="Gaji Pokok">Gaji Pokok:</label>
+        <input type="text" id="Gaji Pokok" required><br><br>
+
+        <label for="Tunjangan Tetap">Tunjangan Tetap:</label>
+        <input type="text" id="Tunjangan Tetap" required><br><br>
+
+        <label for="Masa Kerja">Masa Kerja:</label>
+        <input type="number" id="Masa Kerja" required><br><br>
+
+        <button type="button" onclick="calculateTotal()">Hitung Total</button>
+    </form>
+
+    <div id="result" style="display: none;"></div>
+
+    <h3>Hasil Gaji</h3>
+    <p>Gaji Pokok :<span id="resultGajiPokok"></span></p>
+    
+    
+</body>
+</html>
