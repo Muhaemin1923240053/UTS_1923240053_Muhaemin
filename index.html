@@ -21,10 +21,27 @@
         <button type="button" onclick="calculateTotal()">Hitung Total</button>
     </form>
 
-    <div id="result" style="display: none;"></div>
+    <div id="result" style="display: none;">
 
     <h3>Hasil Gaji</h3>
     <p>Gaji Pokok :<span id="resultGajiPokok"></span></p>
+    <p>Tunjangan Pokok :<span id="resultTunjanganPokok"></span></p>
+    <p>Masa Kerja :<span id="resultMasaKerja"></span></p>
+    <p>Sub Total : <span id="resultSubTotal"></span></p>
+    <p>Total Gaji:<span id="resultTotalGaji"></span></p>
+
+    </div>
+
+    <script>
+        function calculateTotal() {
+            var GajiPokok = parseFloat(getElementById("Gaji Pokok").value);
+            var TunjanganTetap = parseFloat(getElementById("Tunjangan Tetap").value);
+            var MasaKerja = document.getElementById("Masa Kerja").value;
+            var SubTotal = GajiPokok + TunjanganTetap;
+
+            if()
+        }
+    </script>
 
     
 </body>
