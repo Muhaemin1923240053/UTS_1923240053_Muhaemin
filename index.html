@@ -27,8 +27,9 @@
     <p>Gaji Pokok :<span id="resultGajiPokok"></span></p>
     <p>Tunjangan Pokok :<span id="resultTunjanganPokok"></span></p>
     <p>Masa Kerja :<span id="resultMasaKerja"></span></p>
-    <p>Sub Total : <span id="resultSubTotal"></span></p>
-    <p>Total Gaji:<span id="resultTotalGaji"></span></p>
+    <p>PPH:$<span id="resultPPH"></span></p>
+    <p>Sub Total :$ <span id="resultSubTotal"></span></p>
+    <p>Total Gaji:$<span id="resultTotalGaji"></span></p>
 
     </div>
 
@@ -39,8 +40,14 @@
             var MasaKerja = document.getElementById("Masa Kerja").value;
             var SubTotal = GajiPokok + TunjanganTetap;
 
-            
+            if(masakerja ==="12 Bulan"){
+                THR = 100;
+            } else if (masakerja ==="< 12 Bulan"){
+                THR = masakerja * TotalGaji;
+            }
         }
+
+        TotalGaji = GajiPokok + TunjanganTetap;
     </script>
 
     
